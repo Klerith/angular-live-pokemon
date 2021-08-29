@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+type Tabs = 'tab-favorites' | 'tab-pokemons';
 
 @Component({
   selector: 'app-tabs',
-  templateUrl: './tabs.component.html',
-  styleUrls: ['./tabs.component.css']
+  templateUrl: './tabs.component.html'
 })
-export class TabsComponent implements OnInit {
+export class TabsComponent  {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  public currentTab: Tabs = 'tab-pokemons';
 
 }

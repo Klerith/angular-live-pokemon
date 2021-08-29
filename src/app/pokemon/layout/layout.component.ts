@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-type Tabs = 'tab-favorites' | 'tab-pokemons';
-
 @Component({
   selector: 'pokemon-layout',
   templateUrl: './layout.component.html',
@@ -9,7 +7,7 @@ type Tabs = 'tab-favorites' | 'tab-pokemons';
 })
 export class LayoutComponent {
 
-  public currentTab: Tabs = 'tab-pokemons';
+  
 
 
 }
