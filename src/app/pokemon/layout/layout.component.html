@@ -1,3 +1,21 @@
 <h1>Pokémons</h1>
 <hr>
 
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link"
+            (click)="currentTab = 'tab-pokemons'"
+            [ngClass]="{ 'active': currentTab === 'tab-pokemons'}"  
+            href="#">
+            Pokémos
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link"
+            (click)="currentTab = 'tab-favorites'"
+            [ngClass]="{ 'active': currentTab === 'tab-favorites'}"  
+            href="#">
+            Favoritos
+        </a>
+    </li>
+</ul>
